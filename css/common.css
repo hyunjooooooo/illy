@@ -1,0 +1,27 @@
+html,
+body,
+p,
+figure,
+section {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+div,
+section,
+header,
+footer,
+p,
+h1,
+h2 {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*# sourceMappingURL=common.css.map */
