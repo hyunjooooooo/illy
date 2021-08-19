@@ -7,21 +7,22 @@ header .banner {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background-color: #e4e4e4;
+  background-color: #e8e8e8;
   font-size: 0.8rem;
 }
 
 header .banner p:nth-child(2) {
-  width: 11%;
+  width: 20%;
   color: white;
-  background-color: #c92727;
+  background-color: #d12420;
   padding: 12px;
 }
 
 header .banner p:nth-child(1) {
-  width: 89%;
+  width: 90%;
   margin-left: 200px;
-  color: #8f8f8f;
+  color: #65656a;
+  font-size: 12px;
   background-color: #e4e4e4;
   padding: 12px;
 }
@@ -30,25 +31,21 @@ header > nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 15px;
+  padding: 15px 15px 10px 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 0.1px solid #f7f7f7;
 }
 
 header > nav > .main_logo {
-  padding: 0 50px;
-  padding-right: 200px;
+  padding: 0 40px 0 50px;
 }
 
 header > nav > div {
   padding: 0 20px;
-  font-size: 0.9rem;
+  font-size: 13px;
   color: #4e4e4e;
-}
-
-header > nav > div > ul {
-  display: none;
 }
 
 header > nav > div > a {
@@ -56,9 +53,51 @@ header > nav > div > a {
   color: #4e4e4e;
 }
 
+header > nav > div > a:hover {
+  border-bottom: 1px solid red;
+}
+
+.nav2 > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0% 4.5%;
+}
+
+.nav2 > div > ul {
+  display: none;
+  padding: 20px 0;
+}
+
+.nav2 > div > ul > li {
+  padding: 10px 0 5px 0;
+}
+
+.nav2 > div > ul > img {
+  padding: 10px 10px 20px 10px;
+}
+
+.nav2 > div > ul > .imgsize {
+  padding-top: 50px;
+}
+
+.nav2 > div > ul > a {
+  font-size: 1rem;
+}
+
+.nav2 > div > ul.active {
+  display: block;
+  background: white;
+  color: black;
+  font-size: 0.8rem;
+}
+
 main .swiper-container .swiper-wrapper {
   width: 100%;
-  height: 100%;
+  height: 85vh;
 }
 
 main .swiper-container .swiper-wrapper .swiper-slide {
@@ -92,7 +131,7 @@ main .swiper-container .swiper-wrapper .swiper-slide .slidetext1 {
 
 main .swiper-container .swiper-wrapper .swiper-slide .slidetext1 p {
   width: 100%;
-  font-size: 3.5em;
+  font-size: 3em;
   font-weight: bold;
 }
 
@@ -347,31 +386,35 @@ main .swiper-container .swiper-wrapper .swiper-slide .slidetext8 p:nth-of-type(3
 }
 
 .main2 > div > div {
-  padding: 5% 10%;
+  padding: 4% 10%;
   font-size: 1.5rem;
-  width: 50%;
+  width: 100%;
 }
 
 .main2 > div > div > p:nth-of-type(1) {
   font-size: 2.7rem;
-  padding: 9% 0;
+  padding: 2% 0%;
   font-weight: bold;
 }
 
 .main2 > div > div > p:nth-of-type(2) {
   font-weight: bold;
+  line-height: 1.5;
+  padding: 0% 0%;
 }
 
 .main2 > div > div > p:nth-of-type(3) {
+  width: 50%;
   font-size: 1.1rem;
-  padding: 3% 0 10% 0;
+  padding: 1% 5% 5% 0%;
+  line-height: 1.5;
 }
 
 .main2 > div > div > p:nth-of-type(4) {
-  width: 30%;
+  width: 15%;
   text-align: center;
   font-size: 0.8rem;
-  padding: 15px 0px;
+  padding: 15px 30px;
   background: #b10a0a;
   border-radius: 50px;
 }
@@ -700,36 +743,41 @@ footer .footer1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 50px;
-  background-color: #4e4e4e;
+  padding: 40px 0 10px 0;
+  background-color: #63666a;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 footer .footer1 > div {
-  padding: 50px;
+  padding: 0 40px;
 }
 
 footer .footer1 > div > ul {
-  margin: 50px 0;
+  margin: 20px 0;
 }
 
 footer .footer1 > div > ul > li {
   padding: 10px 0;
+  font-size: 0.8rem;
+}
+
+footer .footer1 .icon {
+  font-size: 0.8rem;
 }
 
 footer .footer1 .icon > .footertext > p {
-  padding: 15px 40px;
+  padding: 10px 40px;
   border-radius: 50px;
   border: 1px solid white;
 }
 
 footer .footer1 .icon > .footertext > p:nth-of-type(2) {
-  padding: 15px 55px;
+  padding: 10px 55px;
 }
 
 footer .footer1 .icon > div:nth-of-type(2) {
@@ -737,7 +785,7 @@ footer .footer1 .icon > div:nth-of-type(2) {
 }
 
 footer .footer2 {
-  background-color: #4e4e4e;
+  background-color: #63666a;
   color: white;
   font-size: 0.7rem;
   border-top: 1px solid white;
@@ -751,7 +799,7 @@ footer .footer2 > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 30px 0;
+  padding: 20px 0;
   width: 100%;
 }
 
@@ -761,7 +809,7 @@ footer .footer2 > div > div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 8%;
+  width: 13%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
