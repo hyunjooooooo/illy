@@ -13,20 +13,81 @@ window.addEventListener('DOMContentLoaded',function(){
       },
     });
 
-    const list = document.querySelectorAll('main > .main > .setlist > ul');    
-    const listMenu = document.querySelectorAll('main > .hove');
-    for(let i=0;i<list.length;i++){
-      list[i].addEventListener('mouseover',function(){
-            for(let j=0;j<listMenu.length;j++){
-              listMenu[j].classList.toggle('active');
+    const navBtn = document.querySelector('nav > .nav_product > a');    
+    const navMenu = document.querySelectorAll('body > .nav2 > .nav_product_menu > ul');
+      navBtn.addEventListener('mouseover',function(){
+            for(let j=0;j<navMenu.length;j++){
+              navMenu[j].classList.toggle('active');
             }
         })
-      }
-      for(let i=0;i<list.length;i++){
-        list[i].addEventListener('mouseout',function(){
-          for(let j=0;j<listMenu.length;j++){
-            listMenu[j].classList.remove('active');
+        navBtn.addEventListener('mouseout',function(){
+          for(let j=0;j<navMenu.length;j++){
+            navMenu[j].classList.remove('active');
           }
       })
-    }
+    const navBtn2 = document.querySelector('nav > .nav_coffee > a');    
+    const navMenu2 = document.querySelectorAll('body > .nav2 > .nav_coffee_menu > ul');
+      navBtn2.addEventListener('mouseover',function(){
+            for(let j=0;j<navMenu2.length;j++){
+              navMenu2[j].classList.toggle('active');
+            }
+        })
+        navBtn2.addEventListener('mouseout',function(){
+          for(let j=0;j<navMenu2.length;j++){
+            navMenu2[j].classList.remove('active');
+          }
+      })
+    const navBtn3 = document.querySelector('nav > .nav_machines > a');    
+    const navMenu3 = document.querySelectorAll('body > .nav2 > .nav_machines_menu > ul');
+      navBtn3.addEventListener('mouseover',function(){
+            for(let j=0;j<navMenu3.length;j++){
+              navMenu3[j].classList.toggle('active');
+            }
+        })
+        navBtn3.addEventListener('mouseout',function(){
+          for(let j=0;j<navMenu3.length;j++){
+            navMenu3[j].classList.remove('active');
+          }
+      })
+    const navBtn4 = document.querySelector('nav > .nav_art > a');    
+    const navMenu4 = document.querySelectorAll('body > .nav2 > .nav_art_menu > ul');
+      navBtn4.addEventListener('mouseover',function(){
+            for(let j=0;j<navMenu4.length;j++){
+              navMenu4[j].classList.toggle('active');
+            }
+        })
+        navBtn4.addEventListener('mouseout',function(){
+          for(let j=0;j<navMenu4.length;j++){
+            navMenu4[j].classList.remove('active');
+          }
+      })
+    const navBtn5 = document.querySelector('nav > .nav_acc > a');    
+    const navMenu5 = document.querySelectorAll('body > .nav2 > .nav_acc_menu > ul');
+      navBtn5.addEventListener('mouseover',function(){
+            for(let j=0;j<navMenu5.length;j++){
+              navMenu5[j].classList.toggle('active');
+            }
+        })
+        navBtn5.addEventListener('mouseout',function(){
+          for(let j=0;j<navMenu5.length;j++){
+            navMenu5[j].classList.remove('active');
+          }
+      })
+    
+    // const list = document.querySelectorAll('main > .main > .setlist > ul');    
+    // const listMenu = document.querySelectorAll('main > .main > .hove');
+    // for(let i=0;i<list.length;i++){
+    //   list[i].addEventListener('mouseover',function(){
+    //         for(let j=0;j<listMenu.length;j++){
+    //           listMenu[j].classList.toggle('active');
+    //         }
+    //     })
+    //   }
+    //   for(let i=0;i<list.length;i++){
+    //     list[i].addEventListener('mouseout',function(){
+    //       for(let j=0;j<listMenu.length;j++){
+    //         listMenu[j].classList.remove('active');
+    //       }
+    //   })
+    // }
 });
