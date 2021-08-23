@@ -57,7 +57,7 @@ header {
         padding: 0 3%;
       }
       > a:hover {
-        border-bottom: 1px solid red;
+        border-bottom: 1px solid rgb(201, 39, 39);
         padding: 10px 0;
       }
     }
@@ -133,6 +133,120 @@ main {
       }
     }
   }
+  .sidebtn {
+    z-index: 2;
+    right: 14.98%;
+    top: 50%;
+    background-color: white;
+    width: 2%;
+    position: fixed;
+    text-align: center;
+    border: 1px solid rgb(219, 219, 219);
+    border-right: 0px;
+    // p {
+    //   font-size: 20px;
+    //   padding: 15px 5px;
+    // }
+    // p::before {
+    //   content: ">";
+    // }
+    // p::after {
+    //   content: "<";
+    // }
+    > input[type="checkbox"] + label::after {
+      content: ">";
+    }
+    > input[type="checkbox"]:checked + label::after {
+      content: "<";
+    }
+    > input[type="checkbox"]:checked + label + .sidebar {
+      display: none;
+    }
+  }
+
+  > .sidebar {
+    // display: none;
+    border-left: 1px solid rgb(219, 219, 219);
+    z-index: 1;
+    background: white;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 15%;
+    padding: 0 15px;
+    height: 100vh;
+    > .sideimg {
+      text-align: center;
+      img {
+        object-fit: contain;
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+      }
+    }
+    .sidemenu {
+      text-align: center;
+      p {
+        font-size: 12px;
+        border: 1px solid rgb(224, 224, 224);
+        border-radius: 10px;
+        margin: 15px 0;
+        padding: 10px 30px;
+      }
+      p:nth-of-type(1) {
+        background: rgb(212, 18, 18);
+        color: white;
+      }
+      p:nth-of-type(1):hover {
+        background: rgb(143, 15, 15);
+        color: white;
+      }
+      p:hover {
+        background: rgb(245, 245, 245);
+      }
+    }
+    .sidemenu2 {
+      ul {
+        width: 100%;
+        display: flex;
+        li {
+          margin: 5px 0;
+          text-align: center;
+          img {
+            // margin: 5px 10px;
+            opacity: 0.4;
+            padding: 10px 10px;
+            border-radius: 50px;
+            border: 1px solid rgb(224, 224, 224);
+            width: 25%;
+          }
+          a {
+            font-size: 12px;
+            color: rgb(56, 55, 55);
+          }
+        }
+      }
+    }
+    .view {
+      padding-top: 20px;
+      font-size: 13px;
+      margin: 20px 0;
+      border-top: 1px solid rgb(224, 224, 224);
+      border-bottom: 1px solid rgb(224, 224, 224);
+      align-items: center;
+      text-align: center;
+      img {
+        width: 30%;
+      }
+    }
+    .view2 {
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
+  .sidebar.active {
+    display: inline-block;
+  }
   > .main {
     > h3 {
       text-align: center;
@@ -206,6 +320,18 @@ main {
             }
           }
         }
+        > li:hover {
+          border: 1px solid rgb(223, 16, 16);
+        }
+        > li:hover:hover .btn p {
+          display: block;
+          background: rgb(201, 39, 39);
+          color: white;
+          padding: 10px 20px;
+          margin: 0 5px;
+          border-radius: 50px;
+          font-size: 0.8rem;
+        }
       }
       // > ul:hover > div:nth-of-type(4) > p {
       //   display: block;
@@ -220,6 +346,7 @@ main {
   }
   > .main2 {
     text-align: center;
+    z-index: 0;
   }
   > .main3 {
     margin-bottom: 10%;
@@ -304,7 +431,28 @@ main {
               border-radius: 50px;
               font-size: 0.8rem;
             }
+            > p.active {
+              display: block;
+              background: rgb(201, 39, 39);
+              color: white;
+              padding: 10px 20px;
+              margin: 0 5px;
+              border-radius: 50px;
+              font-size: 0.8rem;
+            }
           }
+        }
+        > li:hover {
+          border: 1px solid rgb(223, 16, 16);
+        }
+        > li:hover:hover .btn p {
+          display: block;
+          background: rgb(201, 39, 39);
+          color: white;
+          padding: 10px 20px;
+          margin: 0 5px;
+          border-radius: 50px;
+          font-size: 0.8rem;
         }
       }
     }

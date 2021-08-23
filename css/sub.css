@@ -80,7 +80,7 @@ header nav div > img:nth-of-type(1) {
 }
 
 header nav div > a:hover {
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #c92727;
   padding: 10px 0;
 }
 
@@ -162,6 +162,130 @@ main .swiper-container .swiper-wrapper .swiper-slide a {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+main .sidebtn {
+  z-index: 2;
+  right: 14.98%;
+  top: 50%;
+  background-color: white;
+  width: 2%;
+  position: fixed;
+  text-align: center;
+  border: 1px solid #dbdbdb;
+  border-right: 0px;
+}
+
+main .sidebtn > input[type="checkbox"] + label::after {
+  content: ">";
+}
+
+main .sidebtn > input[type="checkbox"]:checked + label::after {
+  content: "<";
+}
+
+main .sidebtn > input[type="checkbox"]:checked + label + .sidebar {
+  display: none;
+}
+
+main > .sidebar {
+  border-left: 1px solid #dbdbdb;
+  z-index: 1;
+  background: white;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 15%;
+  padding: 0 15px;
+  height: 100vh;
+}
+
+main > .sidebar > .sideimg {
+  text-align: center;
+}
+
+main > .sidebar > .sideimg img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  margin: 10px 0;
+  text-align: center;
+}
+
+main > .sidebar .sidemenu {
+  text-align: center;
+}
+
+main > .sidebar .sidemenu p {
+  font-size: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  margin: 15px 0;
+  padding: 10px 30px;
+}
+
+main > .sidebar .sidemenu p:nth-of-type(1) {
+  background: #d41212;
+  color: white;
+}
+
+main > .sidebar .sidemenu p:nth-of-type(1):hover {
+  background: #8f0f0f;
+  color: white;
+}
+
+main > .sidebar .sidemenu p:hover {
+  background: whitesmoke;
+}
+
+main > .sidebar .sidemenu2 ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main > .sidebar .sidemenu2 ul li {
+  margin: 5px 0;
+  text-align: center;
+}
+
+main > .sidebar .sidemenu2 ul li img {
+  opacity: 0.4;
+  padding: 10px 10px;
+  border-radius: 50px;
+  border: 1px solid #e0e0e0;
+  width: 25%;
+}
+
+main > .sidebar .sidemenu2 ul li a {
+  font-size: 12px;
+  color: #383737;
+}
+
+main > .sidebar .view {
+  padding-top: 20px;
+  font-size: 13px;
+  margin: 20px 0;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+main > .sidebar .view img {
+  width: 30%;
+}
+
+main > .sidebar .view2 {
+  text-align: center;
+  padding: 10px 0;
+}
+
+main .sidebar.active {
+  display: inline-block;
 }
 
 main > .main > h3 {
@@ -266,8 +390,23 @@ main > .main > .setlist > ul > li > div:nth-of-type(4) > p {
   font-size: 0.8rem;
 }
 
+main > .main > .setlist > ul > li:hover {
+  border: 1px solid #df1010;
+}
+
+main > .main > .setlist > ul > li:hover:hover .btn p {
+  display: block;
+  background: #c92727;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+}
+
 main > .main2 {
   text-align: center;
+  z-index: 0;
 }
 
 main > .main3 {
@@ -387,6 +526,30 @@ main > .main3 > .setlist > ul > li > div:nth-of-type(4) {
 
 main > .main3 > .setlist > ul > li > div:nth-of-type(4) > p {
   display: none;
+  background: #c92727;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+}
+
+main > .main3 > .setlist > ul > li > div:nth-of-type(4) > p.active {
+  display: block;
+  background: #c92727;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+}
+
+main > .main3 > .setlist > ul > li:hover {
+  border: 1px solid #df1010;
+}
+
+main > .main3 > .setlist > ul > li:hover:hover .btn p {
+  display: block;
   background: #c92727;
   color: white;
   padding: 10px 20px;

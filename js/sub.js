@@ -74,20 +74,12 @@ window.addEventListener('DOMContentLoaded',function(){
           }
       })
     
-    // const list = document.querySelectorAll('main > .main > .setlist > ul');    
-    // const listMenu = document.querySelectorAll('main > .main > .hove');
-    // for(let i=0;i<list.length;i++){
-    //   list[i].addEventListener('mouseover',function(){
-    //         for(let j=0;j<listMenu.length;j++){
-    //           listMenu[j].classList.toggle('active');
-    //         }
-    //     })
-    //   }
-    //   for(let i=0;i<list.length;i++){
-    //     list[i].addEventListener('mouseout',function(){
-    //       for(let j=0;j<listMenu.length;j++){
-    //         listMenu[j].classList.remove('active');
-    //       }
-    //   })
-    // }
+    const sideBtn = document.querySelector('main > .sidebtn > p');
+    const sideBar = document.querySelector('main > .sidebar');
+      sideBtn.addEventListener('click',function(){
+        sideBar.classList.toggle('active');
+      })
+      sideBtn.addEventListener('click',function(){
+        sideBar.classList.remove('active');
+      })
 });
