@@ -74,12 +74,11 @@ window.addEventListener('DOMContentLoaded',function(){
           }
       })
     
-    const sideBtn = document.querySelector('main > .sidebtn > p');
-    const sideBar = document.querySelector('main > .sidebar');
-      sideBtn.addEventListener('click',function(){
-        sideBar.classList.toggle('active');
+    const bottomBtn = document.querySelector('main > .bottom_banner > .bannerbtn');
+    const bottomBar = document.querySelector('main > .bottom_banner > .bannerimg');
+    bottomBtn.addEventListener('click',function(){
+      bottomBar.classList.toggle('active');
+      bottomBtn.classList.toggle('active');
       })
-      sideBtn.addEventListener('click',function(){
-        sideBar.classList.remove('active');
-      })
+    
 });
