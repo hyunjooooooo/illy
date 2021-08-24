@@ -600,6 +600,21 @@ main > .main3 > .setlist > ul > li:hover:hover .btn p {
   font-size: 0.8rem;
 }
 
+main > .bottom_banner img:nth-of-type(1) {
+  position: fixed;
+  bottom: 10%;
+  right: 3%;
+  z-index: 3;
+}
+
+main > .bottom_banner img:nth-of-type(2) {
+  border-radius: 10px;
+  z-index: 2;
+  position: fixed;
+  bottom: 3%;
+  right: 2%;
+}
+
 footer {
   width: 100%;
   background-color: #63666a;
