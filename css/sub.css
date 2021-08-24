@@ -164,28 +164,72 @@ main .swiper-container .swiper-wrapper .swiper-slide a {
      object-fit: cover;
 }
 
-main .sidebtn {
-  z-index: 2;
-  right: 14.98%;
-  top: 50%;
-  background-color: white;
-  width: 2%;
+main input[id="btnbtn"] {
+  display: none;
+}
+
+main input[id="btnbtn"] + label {
+  display: block;
+  width: 30px;
+  height: 40px;
   position: fixed;
-  text-align: center;
+  right: 0;
+  top: calc(50%);
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  cursor: pointer;
+  background-color: white;
   border: 1px solid #dbdbdb;
   border-right: 0px;
+  z-index: 2;
 }
 
-main .sidebtn > input[type="checkbox"] + label::after {
-  content: ">";
+main input[id="btnbtn"]:checked + label {
+  z-index: 2;
+  right: 14.98%;
 }
 
-main .sidebtn > input[type="checkbox"]:checked + label::after {
-  content: "<";
+main input[id="btnbtn"] + label span {
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  border-radius: 30px;
+  background: #000;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
 }
 
-main .sidebtn > input[type="checkbox"]:checked + label + .sidebar {
-  display: none;
+main input[id="btnbtn"] + label span:nth-child(1) {
+  top: 40%;
+  left: 30%;
+  -webkit-transform: translateY(100%) rotate(-45deg);
+          transform: translateY(100%) rotate(-45deg);
+}
+
+main input[id="btnbtn"] + label span:nth-child(2) {
+  left: 30%;
+  top: 60%;
+  -webkit-transform: translateY(-100%) rotate(45deg);
+          transform: translateY(-100%) rotate(45deg);
+}
+
+main input[id="btnbtn"]:checked + label span:nth-child(1) {
+  top: 40%;
+  left: 40%;
+  -webkit-transform: translateY(100%) rotate(45deg);
+          transform: translateY(100%) rotate(45deg);
+}
+
+main input[id="btnbtn"]:checked + label span:nth-child(2) {
+  left: 40%;
+  top: 60%;
+  -webkit-transform: translateY(-100%) rotate(-45deg);
+          transform: translateY(-100%) rotate(-45deg);
+}
+
+main input[id="btnbtn"]:checked + label + div {
+  right: 0;
 }
 
 main > .sidebar {
@@ -193,7 +237,9 @@ main > .sidebar {
   z-index: 1;
   background: white;
   position: fixed;
-  right: 0;
+  right: -15%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
   top: 0;
   width: 15%;
   padding: 0 15px;
@@ -282,10 +328,6 @@ main > .sidebar .view img {
 main > .sidebar .view2 {
   text-align: center;
   padding: 10px 0;
-}
-
-main .sidebar.active {
-  display: inline-block;
 }
 
 main > .main > h3 {

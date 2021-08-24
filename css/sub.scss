@@ -133,35 +133,59 @@ main {
       }
     }
   }
-  .sidebtn {
-    z-index: 2;
-    right: 14.98%;
-    top: 50%;
-    background-color: white;
-    width: 2%;
+
+  input[id="btnbtn"] {
+    display: none;
+  }
+  input[id="btnbtn"] + label {
+    display: block;
+    width: 30px;
+    height: 40px;
     position: fixed;
-    text-align: center;
+    right: 0;
+    top: calc(50%);
+    transition: all 0.35s;
+    cursor: pointer;
+    background-color: white;
     border: 1px solid rgb(219, 219, 219);
     border-right: 0px;
-    // p {
-    //   font-size: 20px;
-    //   padding: 15px 5px;
-    // }
-    // p::before {
-    //   content: ">";
-    // }
-    // p::after {
-    //   content: "<";
-    // }
-    > input[type="checkbox"] + label::after {
-      content: ">";
-    }
-    > input[type="checkbox"]:checked + label::after {
-      content: "<";
-    }
-    > input[type="checkbox"]:checked + label + .sidebar {
-      display: none;
-    }
+    z-index: 2;
+  }
+  input[id="btnbtn"]:checked + label {
+    z-index: 2;
+    right: 14.98%;
+  }
+  input[id="btnbtn"] + label span {
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    border-radius: 30px;
+    background: #000;
+    transition: all 0.35s;
+  }
+  input[id="btnbtn"] + label span:nth-child(1) {
+    top: 40%;
+    left: 30%;
+    transform: translateY(100%) rotate(-45deg);
+  }
+  input[id="btnbtn"] + label span:nth-child(2) {
+    left: 30%;
+    top: 60%;
+    transform: translateY(-100%) rotate(45deg);
+  }
+  input[id="btnbtn"]:checked + label span:nth-child(1) {
+    top: 40%;
+    left: 40%;
+    transform: translateY(100%) rotate(45deg);
+  }
+  input[id="btnbtn"]:checked + label span:nth-child(2) {
+    left: 40%;
+    top: 60%;
+    transform: translateY(-100%) rotate(-45deg);
+  }
+  input[id="btnbtn"]:checked + label + div {
+    right: 0;
   }
 
   > .sidebar {
@@ -170,11 +194,13 @@ main {
     z-index: 1;
     background: white;
     position: fixed;
-    right: 0;
+    right: -15%;
+    transition: all 0.35s;
     top: 0;
     width: 15%;
     padding: 0 15px;
     height: 100vh;
+
     > .sideimg {
       text-align: center;
       img {
@@ -244,9 +270,7 @@ main {
       padding: 10px 0;
     }
   }
-  .sidebar.active {
-    display: inline-block;
-  }
+
   > .main {
     > h3 {
       text-align: center;
