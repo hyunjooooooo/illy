@@ -80,5 +80,26 @@ window.addEventListener('DOMContentLoaded',function(){
       bottomBar.classList.toggle('active');
       bottomBtn.classList.toggle('active');
       })
+
+      const elImg = document.querySelectorAll('.sidebar > .sideimg > img');
+      sIdx=0;
+      function slide(){
+        for(let i=0;i<elImg.length;i++){
+          elImg[i].style=`transform:translateX(${-100*sIdx}%)`;
+
+        }
+    }
+    let loop;
+    function interval(){
+        loop = setInterval(function(){
+                        if(sIdx < 2){
+                            sIdx++;
+                        }else{
+                            sIdx=0;
+                        }
+                        slide();
+                    },3000);
+    }
+    interval();
     
 });

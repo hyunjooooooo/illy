@@ -186,7 +186,7 @@ main input[id="btnbtn"] + label {
 
 main input[id="btnbtn"]:checked + label {
   z-index: 2;
-  right: 14.98%;
+  right: 199.5px;
 }
 
 main input[id="btnbtn"] + label span {
@@ -237,20 +237,27 @@ main > .sidebar {
   z-index: 1;
   background: white;
   position: fixed;
-  right: -15%;
+  right: -200px;
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
   top: 0;
-  width: 15%;
+  width: 200px;
   padding: 0 15px;
   height: 100vh;
 }
 
 main > .sidebar > .sideimg {
   text-align: center;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 main > .sidebar > .sideimg img {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
@@ -342,6 +349,7 @@ main > .main > .setlist {
 }
 
 main > .main > .setlist > ul {
+  cursor: pointer;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -467,6 +475,7 @@ main > .main3 > .setlist {
 }
 
 main > .main3 > .setlist > ul {
+  cursor: pointer;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -602,8 +611,8 @@ main > .main3 > .setlist > ul > li:hover:hover .btn p {
 
 main > .bottom_banner img:nth-of-type(1) {
   position: fixed;
-  bottom: 10%;
-  right: 3%;
+  bottom: 70px;
+  right: 45px;
   z-index: 3;
   cursor: pointer;
 }
@@ -612,8 +621,8 @@ main > .bottom_banner img:nth-of-type(2) {
   border-radius: 10px;
   z-index: 2;
   position: fixed;
-  bottom: 3%;
-  right: 2%;
+  bottom: 15px;
+  right: 30px;
 }
 
 main > .bottom_banner .bannerimg.active {
