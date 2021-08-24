@@ -173,7 +173,7 @@ main input[id="btnbtn"] + label {
   width: 30px;
   height: 40px;
   position: fixed;
-  right: 0;
+  right: 199.5px;
   top: calc(50%);
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
@@ -186,7 +186,7 @@ main input[id="btnbtn"] + label {
 
 main input[id="btnbtn"]:checked + label {
   z-index: 2;
-  right: 199.5px;
+  right: 0px;
 }
 
 main input[id="btnbtn"] + label span {
@@ -201,35 +201,35 @@ main input[id="btnbtn"] + label span {
 }
 
 main input[id="btnbtn"] + label span:nth-child(1) {
-  top: 40%;
-  left: 30%;
-  -webkit-transform: translateY(100%) rotate(-45deg);
-          transform: translateY(100%) rotate(-45deg);
-}
-
-main input[id="btnbtn"] + label span:nth-child(2) {
-  left: 30%;
-  top: 60%;
-  -webkit-transform: translateY(-100%) rotate(45deg);
-          transform: translateY(-100%) rotate(45deg);
-}
-
-main input[id="btnbtn"]:checked + label span:nth-child(1) {
-  top: 40%;
+  top: 38%;
   left: 40%;
   -webkit-transform: translateY(100%) rotate(45deg);
           transform: translateY(100%) rotate(45deg);
 }
 
-main input[id="btnbtn"]:checked + label span:nth-child(2) {
+main input[id="btnbtn"] + label span:nth-child(2) {
   left: 40%;
   top: 60%;
   -webkit-transform: translateY(-100%) rotate(-45deg);
           transform: translateY(-100%) rotate(-45deg);
 }
 
+main input[id="btnbtn"]:checked + label span:nth-child(1) {
+  top: 38%;
+  left: 30%;
+  -webkit-transform: translateY(100%) rotate(-45deg);
+          transform: translateY(100%) rotate(-45deg);
+}
+
+main input[id="btnbtn"]:checked + label span:nth-child(2) {
+  left: 30%;
+  top: 60%;
+  -webkit-transform: translateY(-100%) rotate(45deg);
+          transform: translateY(-100%) rotate(45deg);
+}
+
 main input[id="btnbtn"]:checked + label + div {
-  right: 0;
+  right: -200px;
 }
 
 main > .sidebar {
@@ -237,7 +237,7 @@ main > .sidebar {
   z-index: 1;
   background: white;
   position: fixed;
-  right: -200px;
+  right: 0px;
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
   top: 0;

@@ -142,7 +142,7 @@ main {
     width: 30px;
     height: 40px;
     position: fixed;
-    right: 0;
+    right: 199.5px;
     top: calc(50%);
     transition: all 0.35s;
     cursor: pointer;
@@ -153,7 +153,7 @@ main {
   }
   input[id="btnbtn"]:checked + label {
     z-index: 2;
-    right: 199.5px;
+    right: 0px;
   }
   input[id="btnbtn"] + label span {
     display: block;
@@ -165,27 +165,27 @@ main {
     transition: all 0.35s;
   }
   input[id="btnbtn"] + label span:nth-child(1) {
-    top: 40%;
-    left: 30%;
-    transform: translateY(100%) rotate(-45deg);
-  }
-  input[id="btnbtn"] + label span:nth-child(2) {
-    left: 30%;
-    top: 60%;
-    transform: translateY(-100%) rotate(45deg);
-  }
-  input[id="btnbtn"]:checked + label span:nth-child(1) {
-    top: 40%;
+    top: 38%;
     left: 40%;
     transform: translateY(100%) rotate(45deg);
   }
-  input[id="btnbtn"]:checked + label span:nth-child(2) {
+  input[id="btnbtn"] + label span:nth-child(2) {
     left: 40%;
     top: 60%;
     transform: translateY(-100%) rotate(-45deg);
   }
+  input[id="btnbtn"]:checked + label span:nth-child(1) {
+    top: 38%;
+    left: 30%;
+    transform: translateY(100%) rotate(-45deg);
+  }
+  input[id="btnbtn"]:checked + label span:nth-child(2) {
+    left: 30%;
+    top: 60%;
+    transform: translateY(-100%) rotate(45deg);
+  }
   input[id="btnbtn"]:checked + label + div {
-    right: 0;
+    right: -200px;
   }
 
   > .sidebar {
@@ -194,7 +194,7 @@ main {
     z-index: 1;
     background: white;
     position: fixed;
-    right: -200px;
+    right: 0px;
     transition: all 0.35s;
     top: 0;
     width: 200px;
