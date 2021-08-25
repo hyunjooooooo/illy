@@ -342,6 +342,10 @@ main > .sidebar .view2 {
   padding: 10px 0;
 }
 
+main > .main {
+  margin-bottom: 70px;
+}
+
 main > .main > h3 {
   text-align: center;
   padding: 100px 0;
@@ -465,7 +469,7 @@ main > .main2 {
 }
 
 main > .main3 {
-  margin-bottom: 10%;
+  margin: 5% 0 10% 0;
 }
 
 main > .main3 > h3 {
