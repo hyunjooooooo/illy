@@ -56,6 +56,11 @@ header nav div {
   color: #4e4e4e;
 }
 
+header nav div > a {
+  text-decoration: none;
+  color: #4e4e4e;
+}
+
 header nav div > .search2 {
   width: 200px;
   -webkit-box-sizing: border-box;
@@ -354,9 +359,8 @@ main > .main > .setlist > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px 0;
   margin: 0 auto;
-  max-width: 1140px;
+  max-width: 1240px;
 }
 
 main > .main > .setlist > ul > li {
@@ -457,6 +461,7 @@ main > .main > .setlist > ul > li:hover:hover .btn p {
 main > .main2 {
   text-align: center;
   z-index: 0;
+  width: 1400px;
 }
 
 main > .main3 {
@@ -480,9 +485,8 @@ main > .main3 > .setlist > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px 0;
   margin: 0 auto;
-  max-width: 1140px;
+  max-width: 1240px;
 }
 
 main > .main3 > .setlist > ul > li {

@@ -53,7 +53,8 @@ header > nav > div > a {
 }
 
 header > nav > div > a:hover {
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #c92727;
+  padding: 10px 0;
 }
 
 .nav2 > div {
