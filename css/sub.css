@@ -461,7 +461,7 @@ main > .main > .setlist > ul > li:hover:hover .btn p {
 main > .main2 {
   text-align: center;
   z-index: 0;
-  width: 1400px;
+  max-width: 1400px;
 }
 
 main > .main3 {
