@@ -332,6 +332,7 @@ main .main2 {
 
 main .main2 p {
   margin: 10px 0;
+  font-size: 13px;
 }
 
 main .main2 ul {
@@ -346,6 +347,17 @@ main .main2 ul {
 main .main2 ul li {
   font-size: 12px;
   padding: 15px 10px;
+}
+
+main .main2 ul img {
+  width: 10px;
+  padding-right: 5px;
+}
+
+main .main2 ul select {
+  margin: 7px;
+  padding: 5px;
+  margin-left: 650px;
 }
 
 main > .main3 {

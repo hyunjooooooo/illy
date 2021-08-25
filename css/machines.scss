@@ -262,6 +262,7 @@ main {
     margin: 0 auto;
     p {
       margin: 10px 0;
+      font-size: 13px;
     }
     ul {
       display: flex;
@@ -271,6 +272,15 @@ main {
       li {
         font-size: 12px;
         padding: 15px 10px;
+      }
+      img {
+        width: 10px;
+        padding-right: 5px;
+      }
+      select {
+        margin: 7px;
+        padding: 5px;
+        margin-left: 650px;
       }
     }
   }
