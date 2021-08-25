@@ -213,7 +213,8 @@
 }
 .swiper-pagination {
   position: absolute;
-  padding: 20px 0;
+  top: 91%;
+  left: 47%;
   text-align: center;
   transition: 0.8s opacity;
   transform: translate3d(0, 0, 0);
@@ -258,6 +259,7 @@
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
+  margin: 0 5px;
   display: inline-block;
   border-radius: 50%;
   background: rgb(240, 239, 239);
