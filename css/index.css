@@ -97,7 +97,7 @@ header > nav > div > a:hover {
 
 main .swiper-container .swiper-wrapper {
   width: 100%;
-  height: 85vh;
+  height: 700px;
 }
 
 main .swiper-container .swiper-wrapper .swiper-slide {
